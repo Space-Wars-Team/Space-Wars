@@ -1,3 +1,3 @@
 # Space-Wars
-Project στην Τεχνολογία Λογισμικού
-Δημιουργήθηκε με javafx 14, java jdk 14
+Project στην Τεχνολογία Λογισμικού.\
+Δημιουργήθηκε με JavaFX 14, Java jdk 14
