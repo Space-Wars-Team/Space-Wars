@@ -1,8 +1,8 @@
 # Space-Wars
 Project στην Τεχνολογία Λογισμικού.\
 Δημιουργήθηκε με:\
-JavaFX 14:https://gluonhq.com/products/javafx/ ,\
-Java jdk 14 : https://www.oracle.com/java/technologies/javase-downloads.html.  
+JavaFX 14: https://gluonhq.com/products/javafx/ ,\
+Java jdk 14: https://www.oracle.com/java/technologies/javase-downloads.html.  
 \
 Ο φάκελος All-In-One περιέχει όλες τις κλάσεις για την διευκόλυνση του διορθωτή.\
 Για να τρέξετε τον κώδικα, κάνετε import τον φάκελο src σε ένα ide και εκτελείτε την Main.java.
@@ -12,5 +12,5 @@ Updates:\
 1.Προστέθηκε η δυνατότητα στο edit profile menu να μπορεί ο χρήστης να ξαναγράψει κάποιο username όταν αυτό που εισάγει δεν υπάρχει, καθώς πριν αν το username δεν υπήρχε τότε δεν μπορούσε να ξαναγίνει search.\
 2.Προστέθηκε back button στο edit profile menu.\
 3.Στο delete profile menu η διαγραφή του ονόματος χρήστη γίνεται σε σχέση με το υπάρχον όνομα. Δηλαδή αν το όνομα που εισάγει ο χρήστης για διαγραφή δεν υπάρχει στο File.txt τότε δεν θα γίνει διαγραφή. \
-4.Επίσης προστέθηκε και η ίδια δυνατότητα (1) που προστέθηκε στο edit profile menu.
+4.Επίσης στο delete profile menu προστέθηκε και η ίδια δυνατότητα (1) που προστέθηκε στο edit profile menu.
 
