@@ -8,7 +8,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SpaceWars.controllers.Profile.Controller_edit_profile">
    <children>
       <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="100.0" layoutY="24.0">
@@ -32,5 +31,6 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <Button fx:id="back_button" layoutX="64.0" layoutY="415.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="53.0" text="Back" />
    </children>
 </AnchorPane>
