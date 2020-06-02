@@ -8,7 +8,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import java.io.*;
@@ -30,7 +29,7 @@ public class Controller_edit_profile implements Initializable {
     private Button search_button;
 
     @FXML
-    private Label error_label;
+    private Button back_button;
 
     File file = new File("src/images/File.txt");
 
@@ -58,9 +57,29 @@ public class Controller_edit_profile implements Initializable {
                         create_menu.setScene(create_scene);
                         create_menu.show();
                     }else {
-                        comp();
+                        try {
+                            notFound();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            error_msg();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+
                     }
                 }
+        });
+        back_button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                try {
+                    back();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         });
     }
 
@@ -68,13 +87,37 @@ public class Controller_edit_profile implements Initializable {
         while (scanner.hasNextLine()) {
             username = scanner.nextLine();
             if (search_username.getText().equals(username)) {
-                error_label.setText("User exists!");
+
                 compare = true;
             } else {
-                error_label.setText("User does not exist");
+
                 compare = false;
             }
         }
+    }
+    private void notFound() throws IOException {
+        search_button.getScene().getWindow().hide();
+        Stage back_menu = new Stage();
+        Parent main_root = FXMLLoader.load(getClass().getResource("/SpaceWars/GUIs/Profile/edit_profile.fxml"));
+        Scene main_scene = new Scene(main_root);
+        back_menu.setScene(main_scene);
+        back_menu.show();
+    }
+    private void error_msg() throws IOException {
+        search_button.getScene().getWindow().hide();
+        Stage back_menu = new Stage();
+        Parent main_root = FXMLLoader.load(getClass().getResource("/SpaceWars/GUIs/Profile/error_message.fxml"));
+        Scene main_scene = new Scene(main_root);
+        back_menu.setScene(main_scene);
+        back_menu.show();
+    }
+    private void back() throws IOException {
+        back_button.getScene().getWindow().hide();
+        Stage back_menu = new Stage();
+        Parent main_root = FXMLLoader.load(getClass().getResource("/SpaceWars/GUIs/profile_menu.fxml"));
+        Scene main_scene = new Scene(main_root);
+        back_menu.setScene(main_scene);
+        back_menu.show();
     }
 }
 
