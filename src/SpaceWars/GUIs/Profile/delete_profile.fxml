@@ -15,13 +15,13 @@
             <Image url="@../../../images/spacewars.jpg" />
          </image>
       </ImageView>
-      <TextField layoutX="84.0" layoutY="262.0" prefHeight="37.0" prefWidth="232.0" promptText="Search name" />
+      <TextField fx:id="textfield" layoutX="84.0" layoutY="262.0" prefHeight="37.0" prefWidth="232.0" promptText="Search name" />
       <Label layoutX="126.0" layoutY="177.0" prefHeight="37.0" prefWidth="149.0" text="Delete Profile" textFill="#d02095">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="label_msg" layoutX="126.0" layoutY="392.0" prefHeight="26.0" prefWidth="217.0" textFill="#cd2020">
+      <Label fx:id="label_msg" layoutX="126.0" layoutY="379.0" prefHeight="43.0" prefWidth="217.0" textFill="#cd2020">
          <font>
             <Font size="14.0" />
          </font>
